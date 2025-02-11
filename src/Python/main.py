@@ -1,9 +1,6 @@
 # standard python libraries
 import random
 
-# seperate libraries
-import colorama
-
 class rusl():
     '''The main rusl library class.'''
     class m():
