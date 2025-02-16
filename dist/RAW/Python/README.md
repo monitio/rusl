@@ -1,7 +1,7 @@
 This is the [Python](https://python.org) implementation of Rusl.
 
 ## How to use:
-1. Copy [the rusl.py file](/rusl.py) into the same directory as your main Python file.
+1. Copy [the rusl.py file](./rusl.py) into the same directory as your main Python file.
 2. Import Rusl using `from rusl import *`
 3. Use it in your projects how you would any other library.
 
