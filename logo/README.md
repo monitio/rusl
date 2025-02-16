@@ -1,5 +1,5 @@
 # rusl logo
-This file contains the information about the rusl logo.
+This file contains the information about the [rusl logo](./logo.gif).
 
 ### Credits to things I used:
 - [Aseprite - Pixel art editor](https://www.aseprite.org)
