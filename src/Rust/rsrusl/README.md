@@ -8,6 +8,8 @@ This is the [Rust](https://rust-lang.org)/[Cargo](https://crates.io) implementat
 2. Add rusl to the project using: `cargo add rsrusl`
 3. Use rusl in your project like:
 ```rs
+use rsrusl::;
+
 fn main() {
     // Use our rusl library functions
     rsrusl::hw();
