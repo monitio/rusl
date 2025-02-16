@@ -1,9 +1,6 @@
 # standard python libraries
 import random
 
-# seperate libraries
-import colorama
-
 class rusl():
     '''The main rusl library class.'''
     class m():
@@ -22,8 +19,10 @@ class rusl():
         class i():
             '''All user interactions are in this class.'''
             
-            def userInput(im):
+            def userInput(prompt):
                 '''The `input()` function from the Python standard library, but better.<br/>
                 Exports the variable `userOutput`.
                 '''
-                userOutput = input(im)
+                formattedPrompt = "🞂 " + prompt + " "
+                
+                userOutput = input(formattedPrompt)

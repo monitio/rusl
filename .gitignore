@@ -3,4 +3,4 @@ src/Python/__pycache__
 dist/RAW/Python/__pycache__
 
 # Rust Package
-src/Rust/rusl/target
+src/Rust/rsrusl/target

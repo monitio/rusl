@@ -1,0 +1,25 @@
+[package]
+name = "rsrusl"
+version = "0.1.0"
+edition = "2021"
+license = "GPL-3.0"
+authors = ["James Beans"]
+readme = "README.md"
+repository = "https://github.com/monitio/rusl/"
+homepage = "https://github.com/monitio/rusl/"
+description = "A really simple useful library ported to Rust."
+keywords = ["simple", "useful", "standard", "rusl"]
+categories = ["command-line-utilities", "text-processing"]
+include = ["src/", "LICENSE", "README.md"]
+exclude = [".git/", "target/", ".vscode/"]
+
+[dependencies]
+fastrand = "2.3.0"
+
+[lib]
+name = "rsrusl"
+path = "src/lib.rs"
+
+[[bin]]
+name = "main"
+path = "src/main.rs"
