@@ -8,12 +8,11 @@ A **really simple useful library**.
 
 *This is nothing fancy. Just a bunch of useful code (including `Hello, World!`) in functions to speed up your programming. [The src code](/src/) is also useful for examples on how to do things.*
 
-Still need syntax and not just [Emmet](https://www.emmet.io/) and [IntelliSense](https://code.visualstudio.com/docs/editor/intellisense) from [VSCode](https://code.visualstudio.com/)? This feature is comming soon!
-
 
 ---
 
 <hr/>
+<br/>
 
 ## Officially Supported Languages:
 - C and C++ will not be added to the support list at all. It will be to hard to add and annoying to maintain.
