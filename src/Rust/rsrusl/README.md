@@ -1,4 +1,5 @@
 This is the [Rust](https://rust-lang.org)/[Cargo](https://crates.io) implementation of Rusl.
+You can see the [crates.io/cargo package here](https://crates.io/crates/rsrusl).
 
 > [!IMPORTANT]
 > I am aware that there is an existing [rusl package](https://crates.io/crates/rusl) on cargo. This is not the rusl package from here. Because of this I have renamed the rust version to `rsrusl`.
