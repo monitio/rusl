@@ -10,7 +10,7 @@ A **really simple useful library**.
 
 <br/>
 <hr/>
-<div>
+<div style="padding-left: 50px;">
   <a href="https://crates.io/crates/rsrusl"><img src="https://custom-icon-badges.demolab.com/badge/Install%20Package-Rust-red?style=for-the-badge&logo=Rust&logoColor=white" /></a>
   <a href="/dist/RAW/Python/"><img src="https://custom-icon-badges.demolab.com/badge/Install%20Package-Python-blue?style=for-the-badge&logo=Python&logoColor=white" /></a>
 </div>
