@@ -10,7 +10,6 @@ A **really simple useful library**.
 
 Still need syntax and not just [Emmet](https://www.emmet.io/) and [IntelliSense](https://code.visualstudio.com/docs/editor/intellisense) from [VSCode](https://code.visualstudio.com/)? This feature is comming soon!
 
-<br/>
 
 ---
 
