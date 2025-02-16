@@ -1,13 +1,11 @@
 This is the [Rust](https://rust-lang.org)/[Cargo](https://crates.io) implementation of Rusl.
 
-<<<<<<< HEAD
 - I am aware that there is an existing [rusl package](https://crates.io/crates/rusl) on cargo. This is not the rusl package from here. Because of this I have renamed the rust version to `rsrusl`.
-=======
+
 You can see the [crates.io/cargo package here](https://crates.io/crates/rsrusl).
 
 > [!IMPORTANT]
 > I am aware that there is an existing [rusl package](https://crates.io/crates/rusl) on cargo. This is not the rusl package from here. Because of this I have renamed the rust version to `rsrusl`.
->>>>>>> 0279c8e860092dc6f1418376c41ca7425067ae84
 
 ## How to use:
 1. Make a Rust project with [Cargo](https://crates.io) with: `cargo new projectName` and `cd projectName`.
