@@ -5,7 +5,7 @@ use crossterm::{
 use std::{io, process::Command};
 
 /// A single new-line character.
-pub const NL: &str = "\n";
+pub const NLC: &str = "\n";
 
 /// The current rusl version.
 pub const RUSLVER: &str = "0.1.3\n";
@@ -13,6 +13,11 @@ pub const RUSLVER: &str = "0.1.3\n";
 /// Prints the current rusl version.
 pub fn v() {
     println!("rusl - {}", RUSLVER);
+}
+
+/// Prints a new-line character.
+pub fn nl() {
+    println!("{}", NLC);
 }
 
 /// Prints "Hello, World!"
@@ -51,7 +56,7 @@ pub fn log(status: &str, message: &str) {
         _ => Color::White, // Default color for unknown statuses
     };
 
-    let formattedmessage = format!("| {}", message);
+    let formattedmessage = format!("| {}\n", message);
 
     execute!(
         stdout,
