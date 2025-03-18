@@ -9,7 +9,7 @@ class rusl():
 
     def v(ruslver):
         '''Prints the current used rusl version.'''
-        print("rusl" + " - " + ruslver)
+        print("rusl" + " - " + rusl.ruslver)
 
     NL = "\n"
 
