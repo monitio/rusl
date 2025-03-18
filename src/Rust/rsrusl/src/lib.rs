@@ -41,7 +41,7 @@ pub fn cls(printversion: &str) {
     }
 }
 
-/// Logs a message with a colored "🞂" symbol/indicator based on status type.
+/// Logs a message with a colored "▼" symbol/indicator based on status type.
 pub fn log(status: &str, message: &str) {
     let mut stdout = io::stdout();
 
