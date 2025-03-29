@@ -37,7 +37,7 @@ pub fn cls(printversion: &str) {
     match printversion.trim().to_lowercase().as_str() {
         "yes" | "y" => crate::v(),
         "no" | "n" => {}
-        _ => panic!("Invalid argument for rusl::cls(printversion). Use 'yes' or 'no'."),
+        _ => panic!("Invalid argument for rsrusl::cls(printversion). Use 'yes' or 'no'."),
     }
 }
 
@@ -48,11 +48,11 @@ pub fn log(status: &str, message: &str) {
     // Define colors for each status
     let status_color = match status {
         "tip" => Color::Magenta,
-        "good" => Color::Green,
-        "warning" => Color::DarkYellow, // Yellowish/Orange
-        "error" => Color::Red,
-        "userhelp" => Color::Cyan, // Light Blue
         "test" => Color::Blue,
+        "good" => Color::Green,
+        "error" => Color::Red,
+        "warning" => Color::DarkYellow, // Yellowish/Orange
+        "userhelp" => Color::Cyan,
         _ => Color::White, // Default color for unknown statuses
     };
 
