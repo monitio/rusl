@@ -8,7 +8,7 @@ use std::{io, process::Command};
 pub const NLC: &str = "\n";
 
 /// The current rusl version.
-pub const RUSLVER: &str = "0.1.3\n";
+pub const RUSLVER: &str = "0.1.5\n";
 
 /// Prints the current rusl version.
 pub fn v() {
@@ -41,7 +41,37 @@ pub fn cls(printversion: &str) {
     }
 }
 
+/// Clears the console with a few more options than the cls command.
+///
+/// Params:
+/// printversion - Do you want to print the version or just clear? (accepts yes or no as string)
+/// name - name of program (string)
+/// version - the version of your program (string)
+pub fn customcls(printversion: &str, name: &str, version: &str) {
+    if cfg!(target_os = "windows") {
+        Command::new("cmd").args(&["/C", "cls"]).status().unwrap();
+    } else {
+        Command::new("clear").status().unwrap();
+    }
+
+    // Validate input and act accordingly
+    match printversion.trim().to_lowercase().as_str() {
+        "yes" | "y" => println!("{} - {}", name, version),
+        "no" | "n" => {}
+        _ => panic!("Invalid argument for rsrusl::CustomCls(printversion). Use 'yes' or 'no'."),
+    }
+}
+
 /// Logs a message with a colored "▼" symbol/indicator based on status type.
+///
+/// Status Colors allowed to use:
+/// tip - Magenta
+/// test - blue
+/// good - green
+/// error - red
+/// warning - DarkYellow (orangeish yellow)
+/// userhelp - Cyan (light blue)
+/// "" - default white color (because nothing is put)
 pub fn log(status: &str, message: &str) {
     let mut stdout = io::stdout();
 
@@ -204,7 +234,7 @@ pub mod testing {
             )
             .unwrap();
         } else {
-            execute!(stdout, Print("All tests ran successfully.")).unwrap();
+            execute!(stdout, Print("All tests ran.")).unwrap();
         }
     }
 
